@@ -1,11 +1,11 @@
 {
     "name": "Upserv",
     "short_name": "Upserv",
-    "start_url": ".",
+    "start_url": "https://upserv.co.za",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Upserv. A Barterly product.",
+    "description": "Upserv is a trusted place for quality home and property services. A Barterly product.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
