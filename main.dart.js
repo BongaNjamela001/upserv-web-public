@@ -66115,12 +66115,12 @@ return new A.e3(B.h8,A.cv(A.c([new A.CL(r,s),B.ao,A.hh(new A.tV(A.aa(a,s,t.w).w.
 A.T4.prototype={
 $0(){var s=window
 s.toString
-B.bW.kM(s,"https://app.upserv.com","_blank")},
+B.bW.kM(s,"https://upserv.co.za/clients/","_blank")},
 $S:12}
 A.T5.prototype={
 $0(){var s=window
 s.toString
-B.bW.kM(s,"https://app.upserv.com/signUp","_blank")},
+B.bW.kM(s,"https://upserv.co.za/clients/signUp","_blank")},
 $S:12}
 A.tA.prototype={
 J(a){return A.Wk(new A.pX(this.T6(A.aa(a,null,t.w).w.a.a),16,16),new A.T3(this),3,B.eC,!0)},
@@ -66426,12 +66426,12 @@ return new A.e3(B.h8,A.cv(A.c([new A.Iu(r,s),B.ao,A.hh(new A.tV(A.aa(a,s,t.w).w.
 A.a6l.prototype={
 $0(){var s=window
 s.toString
-B.bW.kM(s,"https://skilled.upserv.com/login","_blank")},
+B.bW.kM(s,"https://upserv.co.za/skilled/","_blank")},
 $S:12}
 A.a6m.prototype={
 $0(){var s=window
 s.toString
-B.bW.kM(s,"https://skilled.upserv.com/user-type-selection","_blank")},
+B.bW.kM(s,"https://upserv.co.za/skilled/user-type-selection","_blank")},
 $S:12}
 A.y4.prototype={
 ab(){return new A.AN(B.vN)}}
