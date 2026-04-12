@@ -22,16 +22,16 @@
   <link rel="manifest" href="manifest.json">
 
   <script>
-    var serviceWorkerVersion = '"1297882694"';
+    var serviceWorkerVersion = '"1181749050"';
   </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_MAPS_API_KEY_HERE"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFBEeqwiL7mvIukNi-77JepvW8aEUw30w"></script>
 </head>
 
 <body style="overflow: hidden">
   <!-- Direct script injection since flutter.js is absent from project -->
   <script src="main.dart.js" type="application/javascript"></script>
   <script>
-    window.addEventListener('load', function(ev) {
+    window.addEventListener('load', function (ev) {
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('flutter_service_worker.js?v=' + serviceWorkerVersion);
       }
