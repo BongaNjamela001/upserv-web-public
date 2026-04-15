@@ -1,0 +1,87 @@
+{"professions": [
+    {   
+        "professionIndex": 0,
+        "professionName": "Electrician",
+        "iconPath": "assets/images/imgelectrician.svg"
+    },
+    {   
+        "professionIndex": 1,
+        "professionName": "Plumber",
+        "iconPath": "assets/images/imgplumbing.svg"
+    },
+    {   
+        "professionIndex": 2,
+        "professionName": "Janitor",
+        "iconPath": "assets/images/imgjanitor.svg"
+    },
+    {   
+        "professionIndex": 3,
+        "professionName": "PV Installer",
+        "iconPath": "assets/images/imgpvinstaller.svg"
+    },
+    {   
+        "professionIndex": 4,
+        "professionName": "Carpenter",
+        "iconPath": "assets/images/imgsaw.svg"
+    },
+    {   
+        "professionIndex": 5,
+        "professionName": "Landscaper",
+        "iconPath": "assets/images/imglandscape.svg"
+    },
+    {   
+        "professionIndex": 6,
+        "professionName": "Mechanic",
+        "iconPath": "assets/images/imgoilchange.svg"
+    },
+    {   
+        "professionIndex": 7,
+        "professionName": "Painter",
+        "iconPath": "assets/images/imgpainter.svg"
+    },
+    {   
+        "professionIndex": 8,
+        "professionName": "Pool Tech",
+        "iconPath": "assets/images/imgpoolvector.svg"
+    },
+    {   
+        "professionIndex": 9,
+        "professionName": "Garage Door Tech",
+        "iconPath": "assets/images/imggaragedoor.svg"
+    },
+    {   
+        "professionIndex": 10,
+        "professionName": "Gate Tech",
+        "iconPath": "assets/images/imggate.svg"
+    },
+    {   
+        "professionIndex": 11,
+        "professionName": "HVAC Tech",
+        "iconPath": "assets/images/imghvac.svg"
+    },
+    {   
+        "professionIndex": 12,
+        "professionName": "Laundry Attendant",
+        "iconPath": "assets/images/imglaundry.svg"
+    },
+    {   
+        "professionIndex": 13,
+        "professionName": "Network Tech",
+        "iconPath": "assets/images/imgwifi.svg"
+    },
+    {   
+        "professionIndex": 14,
+        "professionName": "IT Tech",
+        "iconPath": "assets/images/imgcomputers.svg"
+    },
+    {   
+        "professionIndex": 15,
+        "professionName": "Refrigeration Tech",
+        "iconPath": "assets/images/imgfridge.svg"
+    },
+    {   
+        "professionIndex": 16,
+        "professionName": "Locksmith",
+        "iconPath": "assets/images/imglocksmith.svg"
+    }
+]}

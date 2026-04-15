@@ -1,0 +1,17 @@
+{"usertypes": [
+    {   
+        "id": "0",
+        "name": "Company",
+        "iconPath": "assets/images/imgbusiness.svg"
+    },
+    {   
+        "id": "1",
+        "name": "Employee",
+        "iconPath": "assets/images/imgemployee.svg"
+    },
+    {   
+        "id": "2",
+        "name": "Freelancer",
+        "iconPath": "assets/images/imgaccount.svg"
+    }
+]}
