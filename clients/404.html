@@ -22,9 +22,10 @@
   <link rel="manifest" href="manifest.json">
 
   <script>
-    var serviceWorkerVersion = '"3873153717" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */';
+    var serviceWorkerVersion = '"2202211190" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */';
   </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFBEeqwiL7mvIukNi-77JepvW8aEUw30w"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFBEeqwiL7mvIukNi-77JepvW8aEUw30w&v=weekly&libraries=marker"></script>
+  <script src="flutter.js" defer></script>
   <style>
     html, body {
       margin: 0;
@@ -41,13 +42,18 @@
 </head>
 
 <body style="overflow: hidden">
-  <!-- Direct script injection since flutter.js is absent from project -->
-  <script src="main.dart.js" type="application/javascript"></script>
   <script>
     window.addEventListener('load', function (ev) {
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=' + serviceWorkerVersion);
-      }
+      _flutter.loader.load({
+        serviceWorkerSettings: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine().then(function (appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
     });
   </script>
 </body>
