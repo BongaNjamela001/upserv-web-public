@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <base href="/clients/">
+  <base href="/trades/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -20,10 +20,7 @@
   <title>Upserv Trades</title>
   <link rel="manifest" href="manifest.json">
 
-  <script>
-    var serviceWorkerVersion = '"437817916" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */';
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFBEeqwiL7mvIukNi-77JepvW8aEUw30w&v=weekly&libraries=marker,places"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFBEeqwiL7mvIukNi-77JepvW8aEUw30w&v=weekly&libraries=marker,places" async></script>
   <script src="flutter.js" defer></script>
 
   <style>
@@ -44,6 +41,7 @@
 <body style="overflow: hidden">
   <script>
     window.addEventListener('load', function (ev) {
+      var serviceWorkerVersion = '"3603494226" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */';
       _flutter.loader.load({
         serviceWorkerSettings: {
           serviceWorkerVersion: serviceWorkerVersion,

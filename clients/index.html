@@ -21,10 +21,7 @@
   <title>Upserv Clients</title>
   <link rel="manifest" href="manifest.json">
 
-  <script>
-    var serviceWorkerVersion = '"2202211190" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */';
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFBEeqwiL7mvIukNi-77JepvW8aEUw30w&v=weekly&libraries=marker"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFBEeqwiL7mvIukNi-77JepvW8aEUw30w&v=weekly&libraries=marker" async></script>
   <script src="flutter.js" defer></script>
   <style>
     html, body {
@@ -44,6 +41,7 @@
 <body style="overflow: hidden">
   <script>
     window.addEventListener('load', function (ev) {
+      var serviceWorkerVersion = '"3527498940" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */';
       _flutter.loader.load({
         serviceWorkerSettings: {
           serviceWorkerVersion: serviceWorkerVersion,
