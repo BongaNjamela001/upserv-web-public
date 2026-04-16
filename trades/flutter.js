@@ -29,7 +29,7 @@
             }
           };
           script.onerror = reject;
-          document.body.append(script);
+          document.body.appendChild(script);
         });
       }
     };

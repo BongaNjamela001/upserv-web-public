@@ -9,7 +9,7 @@
   <meta name="description" content="Upserv Trades - The platform for qualified professionals to manage their services.">
 
   <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Upserv Trades">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
@@ -20,8 +20,54 @@
   <title>Upserv Trades</title>
   <link rel="manifest" href="manifest.json">
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFBEeqwiL7mvIukNi-77JepvW8aEUw30w&v=weekly&libraries=marker,places" async></script>
-  <script src="flutter.js" defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFBEeqwiL7mvIukNi-77JepvW8aEUw30w&loading=async&v=weekly&libraries=marker,places" async></script>
+  
+  <script>
+    (function() {
+      var _scriptLoaded = false;
+      window._flutter = {
+        loader: {
+          loadEntrypoint: function(options) {
+            if (_scriptLoaded) return;
+            _scriptLoaded = true;
+            var script = document.createElement('script');
+            script.src = 'main.dart.js';
+            script.type = 'application/javascript';
+            var entrypointLoader = {
+              loadEntrypoint: function() {
+                return new Promise(function(resolve, reject) {
+                  script.onload = function() {
+                    if (window._flutter && window._flutter.engineInitializer) {
+                      resolve(window._flutter.engineInitializer);
+                    } else {
+                      // Fallback for older engine versions
+                      resolve({
+                        initializeEngine: function(args) {
+                          return window._flutter.engineInitializer.initializeEngine(args);
+                        }
+                      });
+                    }
+                  };
+                  script.onerror = reject;
+                  document.body.appendChild(script);
+                });
+              }
+            };
+
+            if (options && options.onEntrypointLoaded) {
+              options.onEntrypointLoaded(entrypointLoader);
+            } else {
+              entrypointLoader.loadEntrypoint().then(function(engineInitializer) {
+                return engineInitializer.initializeEngine();
+              }).then(function(appRunner) {
+                return appRunner.runApp();
+              });
+            }
+          }
+        }
+      };
+    })();
+  </script>
 
   <style>
     html, body {
@@ -41,9 +87,9 @@
 <body style="overflow: hidden">
   <script>
     window.addEventListener('load', function (ev) {
-      var serviceWorkerVersion = '"3603494226" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */';
-      _flutter.loader.load({
-        serviceWorkerSettings: {
+      var serviceWorkerVersion = '"1243097618" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */';
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         },
         onEntrypointLoaded: function (engineInitializer) {
