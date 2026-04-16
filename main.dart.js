@@ -69182,7 +69182,7 @@ $S:54}
 A.DJ.prototype={
 I(a){var s=null,r=t.w,q=A.ab(a,s,r).w,p=A.ab(a,s,r).w,o=A.nD(q.a.a,A.ab(a,s,r).w.a.a*0.36,p.a.a*0.55,A.ab(a,s,r).w.a.a*0.26)
 r=o.dX()
-return A.fM(A.ahw(s,A.fM(A.hz("assets/images/clients_prototype_play.png",s,o.dX(),r),s,s),B.b2,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,new A.UJ(),s,s,s),s,s)}}
+return A.fM(A.ahw(s,A.fM(A.hz("assets/images/upserv_clients_feature_img.png",s,o.dX(),r),s,s),B.b2,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,new A.UJ(),s,s,s),s,s)}}
 A.UJ.prototype={
 $0(){var s=window
 s.toString
@@ -69438,7 +69438,7 @@ return A.cv(A.c([A.kB(B.R,A.bs(this.c,s,s,s,s,s,s,s,$.dr().bp(B.aC),s,s,s)),B.aW
 A.JR.prototype={
 I(a){var s=null,r=t.w,q=A.ab(a,s,r).w,p=A.ab(a,s,r).w,o=A.nD(q.a.a,A.ab(a,s,r).w.a.a*0.36,p.a.a*0.55,A.ab(a,s,r).w.a.a*0.26)
 r=o.dX()
-return A.fM(A.ahw(s,A.fM(A.hz("assets/images/trades_prototype_play.png",s,o.dX(),r),s,s),B.b2,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,new A.a7S(),s,s,s),s,s)}}
+return A.fM(A.ahw(s,A.fM(A.hz("assets/images/upserv_trades_feature_img.png",s,o.dX(),r),s,s),B.b2,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,new A.a7S(),s,s,s),s,s)}}
 A.a7S.prototype={
 $0(){var s=window
 s.toString
