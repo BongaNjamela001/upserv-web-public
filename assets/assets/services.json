@@ -1,0 +1,826 @@
+{
+    "serviceClasses": [
+        {
+            "id": "repairs",
+            "name": "Repairs",
+            "icon": "assets/images/icon_home_repairs.svg"
+        },
+        {
+            "id": "installations",
+            "name": "Installations",
+            "icon": "assets/images/icon_home_installations.svg"
+        },
+        {
+            "id": "maintenance",
+            "name": "Maintenance",
+            "icon": "assets/images/icon_home_maintenance.svg"
+        },
+        {
+            "id": "cleaning",
+            "name": "Cleaning",
+            "icon": "assets/images/icon_home_cleaning.svg"
+        },
+        {
+            "id": "certification",
+            "name": "Certification",
+            "icon": "assets/images/icon_home_certification.svg"
+        }
+    ],
+    "trades": [
+        {
+            "id": "electrician",
+            "name": "Electrician",
+            "skilledIcon": "assets/images/imgelectrician.svg",
+            "clientIcon": "assets/images/img_electrical_vector.svg",
+            "qualification": "Wireman's Licence",
+            "serviceClasses": [
+                "repairs",
+                "installations",
+                "maintenance",
+                "certification"
+            ],
+            "specialties": [
+                {
+                    "id": "lightWiring",
+                    "label": "Lighting System Wiring",
+                    "category": "residential"
+                },
+                {
+                    "id": "lightFixture",
+                    "label": "Lighting Fixture Installation",
+                    "category": "residential"
+                },
+                {
+                    "id": "powerOutlet",
+                    "label": "Power Outlet Wiring",
+                    "category": "residential"
+                },
+                {
+                    "id": "distributionBoard",
+                    "label": "Distribution Board Wiring",
+                    "category": "commercial"
+                },
+                {
+                    "id": "securitySystemWiring",
+                    "label": "Security System Wiring",
+                    "category": "security"
+                },
+                {
+                    "id": "gateMotor",
+                    "label": "Gate Motor Wiring",
+                    "category": "security"
+                },
+                {
+                    "id": "garageMotor",
+                    "label": "Garage Motor Wiring",
+                    "category": "security"
+                },
+                {
+                    "id": "complianceCertification",
+                    "label": "Compliance Certification",
+                    "category": "compliance"
+                },
+                {
+                    "id": "alarmSystems",
+                    "label": "Alarm System Wiring",
+                    "category": "security"
+                },
+                {
+                    "id": "smartHome",
+                    "label": "Smart Home Hub and Automation",
+                    "category": "residential"
+                },
+                {
+                    "id": "cctvSystem",
+                    "label": "CCTV System Installation",
+                    "category": "security"
+                },
+                {
+                    "id": "intercomSystem",
+                    "label": "Intercom System Setup",
+                    "category": "security"
+                },
+                {
+                    "id": "evCharger",
+                    "label": "EV Charger Installation",
+                    "category": "residential"
+                }
+            ]
+        },
+        {
+            "id": "plumber",
+            "name": "Plumber",
+            "skilledIcon": "assets/images/imgplumbing.svg",
+            "clientIcon": "assets/images/img_plumbing_house.svg",
+            "qualification": "Plumbing License",
+            "serviceClasses": [
+                "repairs",
+                "installations",
+                "maintenance",
+                "certification"
+            ],
+            "specialties": [
+                {
+                    "id": "waterLine",
+                    "label": "Water Lines",
+                    "category": "repair"
+                },
+                {
+                    "id": "drainageSystems",
+                    "label": "Drainage Systems",
+                    "category": "drainage"
+                },
+                {
+                    "id": "waterHeaters",
+                    "label": "Water Heaters",
+                    "category": "systems"
+                },
+                {
+                    "id": "waterFilteration",
+                    "label": "Water Filteration Systems",
+                    "category": "systems"
+                },
+                {
+                    "id": "septicSystem",
+                    "label": "Septic Systems",
+                    "category": "systems"
+                },
+                {
+                    "id": "pipeInsulation",
+                    "label": "Pipe Insulation",
+                    "category": "installation"
+                },
+                {
+                    "id": "sinkAndBasin",
+                    "label": "Sink and Basin Installation and Maintenance",
+                    "category": "installation"
+                },
+                {
+                    "id": "fountainPlumbing",
+                    "label": "Fountain Plumbing",
+                    "category": "installation"
+                },
+                {
+                    "id": "remodeling",
+                    "label": "Bathroom and Kitchen Remodeling",
+                    "category": "installation"
+                },
+                {
+                    "id": "greywaterSystem",
+                    "label": "Greywater Re-routing System",
+                    "category": "systems"
+                },
+                {
+                    "id": "rainwaterHarvesting",
+                    "label": "Rainwater Harvesting Setup",
+                    "category": "systems"
+                },
+                {
+                    "id": "boreholePump",
+                    "label": "Borehole Pump Installation",
+                    "category": "systems"
+                }
+            ]
+        },
+        {
+            "id": "cleaning_tech",
+            "name": "Cleaning Tech",
+            "skilledIcon": "assets/images/imgjanitor.svg",
+            "clientIcon": "assets/images/img_room_house.svg",
+            "qualification": "FET Certificate or equivalent",
+            "serviceClasses": [
+                "cleaning"
+            ],
+            "specialties": [
+                {
+                    "id": "generalCleaning",
+                    "label": "General Domestic Cleaning Services",
+                    "category": "residential"
+                },
+                {
+                    "id": "roomCleaning",
+                    "label": "General Room Cleaning",
+                    "category": "residential"
+                },
+                {
+                    "id": "kitchenCleaning",
+                    "label": "Kitchen Cleaning",
+                    "category": "residential"
+                },
+                {
+                    "id": "bathroomCleaning",
+                    "label": "Bathroom Cleaning",
+                    "category": "residential"
+                },
+                {
+                    "id": "bedroomCleaning",
+                    "label": "Bedroom Cleaning",
+                    "category": "residential"
+                },
+                {
+                    "id": "livingroomCleaning",
+                    "label": "Living Room Cleaning",
+                    "category": "residential"
+                },
+                {
+                    "id": "garageCleaning",
+                    "label": "Garage Cleaning",
+                    "category": "residential"
+                },
+                {
+                    "id": "officeCleaning",
+                    "label": "Office Cleaning",
+                    "category": "commercial"
+                },
+                {
+                    "id": "carpetCleaning",
+                    "label": "Carpet and Upholstery Cleaning Services",
+                    "category": "specialized"
+                },
+                {
+                    "id": "industrialCleaning",
+                    "label": "Industrial Cleaning Services",
+                    "category": "commercial"
+                },
+                {
+                    "id": "healthCareCleaning",
+                    "label": "Health Care Cleaning Services",
+                    "category": "commercial"
+                },
+                {
+                    "id": "vehicleCleaning",
+                    "label": "Vehicle Cleaning Services",
+                    "category": "specialized"
+                },
+                {
+                    "id": "cleaningAtHeight",
+                    "label": "Cleaning at Height",
+                    "category": "specialized"
+                }
+            ]
+        },
+        {
+            "id": "pv_installer",
+            "name": "PV Installer",
+            "skilledIcon": "assets/images/imgpvinstaller.svg",
+            "clientIcon": "assets/images/img_electrical_vector.svg",
+            "qualification": "PV Green Card",
+            "serviceClasses": [
+                "installations",
+                "maintenance"
+            ],
+            "specialties": [
+                {
+                    "id": "stringDesign",
+                    "label": "PV Generator Array Design and Installation",
+                    "category": "design"
+                },
+                {
+                    "id": "inverter",
+                    "label": "Inverter Sizing, Installation and Maintenance",
+                    "category": "installation"
+                },
+                {
+                    "id": "cablingAndConnectors",
+                    "label": "Cabling, Wiring and Connectors",
+                    "category": "installation"
+                },
+                {
+                    "id": "batterySizing",
+                    "label": "Battery Sizing, Installation and Maintenance",
+                    "category": "installation"
+                },
+                {
+                    "id": "testAndMeasuring",
+                    "label": "Test and Measuring",
+                    "category": "maintenance"
+                },
+                {
+                    "id": "pvCleaning",
+                    "label": "PV Generator System Cleaning Service",
+                    "category": "maintenance"
+                }
+            ]
+        },
+        {
+            "id": "carpenter",
+            "name": "Carpenter",
+            "skilledIcon": "assets/images/imgsaw.svg",
+            "clientIcon": "assets/images/img_carpentry_house.svg",
+            "qualification": "Woodwork Certificate",
+            "serviceClasses": [
+                "repairs",
+                "installations",
+                "maintenance"
+            ],
+            "specialties": [
+                {
+                    "id": "furnitureMaking",
+                    "label": "Furniture Building and Custom Woodwork",
+                    "category": "custom"
+                },
+                {
+                    "id": "cabinetry",
+                    "label": "Cabinet Design, Installation and Repair",
+                    "category": "custom"
+                },
+                {
+                    "id": "flooring",
+                    "label": "Hardwood and Laminate Flooring Installation",
+                    "category": "finishing"
+                },
+                {
+                    "id": "framing",
+                    "label": "House Framing and Structural Carpentry",
+                    "category": "structural"
+                },
+                {
+                    "id": "doorAndWindow",
+                    "label": "Door and Window Installation and Repair",
+                    "category": "repair"
+                },
+                {
+                    "id": "woodFinishing",
+                    "label": "Sanding, Staining, and Varnishing",
+                    "category": "finishing"
+                },
+                {
+                    "id": "deckAndPatio",
+                    "label": "Deck and Patio Construction",
+                    "category": "structural"
+                },
+                {
+                    "id": "wardrobeBuiltIn",
+                    "label": "Built-in Wardrobe Design and Install",
+                    "category": "custom"
+                },
+                {
+                    "id": "pergolaConstruction",
+                    "label": "Wooden Pergola and Gazebo Construction",
+                    "category": "structural"
+                }
+            ]
+        },
+        {
+            "id": "landscaper",
+            "name": "Landscaper",
+            "skilledIcon": "assets/images/imglandscape.svg",
+            "clientIcon": "assets/images/img_garden_house.svg",
+            "qualification": "FET Certificate or equivalent",
+            "serviceClasses": [
+                "maintenance",
+                "cleaning"
+            ],
+            "specialties": [
+                {
+                    "id": "lawnCare",
+                    "label": "Lawn Mowing, Trimming, and Maintenance",
+                    "category": "maintenance"
+                },
+                {
+                    "id": "gardenDesign",
+                    "label": "Garden and Landscape Design",
+                    "category": "design"
+                },
+                {
+                    "id": "irrigationSystems",
+                    "label": "Irrigation System Installation and Repair",
+                    "category": "installation"
+                },
+                {
+                    "id": "treeTrimming",
+                    "label": "Tree Trimming and Removal",
+                    "category": "maintenance"
+                },
+                {
+                    "id": "hardscaping",
+                    "label": "Pavers, Walkways, and Retaining Walls",
+                    "category": "installation"
+                },
+                {
+                    "id": "artificialTurf",
+                    "label": "Artificial Turf Installation",
+                    "category": "installation"
+                },
+                {
+                    "id": "verticalGarden",
+                    "label": "Vertical Garden and Living Wall Setup",
+                    "category": "installation"
+                }
+            ]
+        },
+        {
+            "id": "painter",
+            "name": "Painter",
+            "skilledIcon": "assets/images/imgpainter.svg",
+            "clientIcon": "assets/images/img_wallpaint.svg",
+            "qualification": "FET Certificate or equivalent",
+            "serviceClasses": [
+                "maintenance",
+                "repairs"
+            ],
+            "specialties": [
+                {
+                    "id": "interiorPainting",
+                    "label": "Interior House and Office Painting",
+                    "category": "interior"
+                },
+                {
+                    "id": "exteriorPainting",
+                    "label": "Exterior Painting and Weatherproofing",
+                    "category": "exterior"
+                },
+                {
+                    "id": "drywallRepair",
+                    "label": "Drywall Repair and Patching",
+                    "category": "prep"
+                },
+                {
+                    "id": "wallpaperInstallation",
+                    "label": "Wallpaper Application and Removal",
+                    "category": "interior"
+                }
+            ]
+        },
+        {
+            "id": "pool_tech",
+            "name": "Pool Tech",
+            "skilledIcon": "assets/images/imgpoolvector.svg",
+            "clientIcon": "assets/images/img_pool_house.svg",
+            "qualification": "FET Certificate or equivalent",
+            "serviceClasses": [
+                "maintenance",
+                "repairs"
+            ],
+            "specialties": [
+                {
+                    "id": "poolCleaning",
+                    "label": "Routine Pool Cleaning and Maintenance",
+                    "category": "maintenance"
+                },
+                {
+                    "id": "chemicalBalancing",
+                    "label": "Chemical Balancing and Water Testing",
+                    "category": "maintenance"
+                },
+                {
+                    "id": "poolPumpRepair",
+                    "label": "Pool Pump and Filter Repair",
+                    "category": "repair"
+                },
+                {
+                    "id": "leakDetection",
+                    "label": "Leak Detection and Pipe Repairs",
+                    "category": "repair"
+                }
+            ]
+        },
+        {
+            "id": "garage_door_tech",
+            "name": "Garage Door Tech",
+            "skilledIcon": "assets/images/imggaragedoor.svg",
+            "clientIcon": "assets/images/img_garage_door.svg",
+            "qualification": "Diploma Certificate or equivalent",
+            "serviceClasses": [
+                "repairs",
+                "installations",
+                "maintenance"
+            ],
+            "specialties": [
+                {
+                    "id": "doorInstallation",
+                    "label": "Garage Door Installation",
+                    "category": "installation"
+                },
+                {
+                    "id": "springReplacement",
+                    "label": "Spring and Torsion Bar Replacement",
+                    "category": "repair"
+                },
+                {
+                    "id": "openerRepair",
+                    "label": "Garage Door Opener Repair and Programming",
+                    "category": "repair"
+                }
+            ]
+        },
+        {
+            "id": "gate_tech",
+            "name": "Gate Tech",
+            "skilledIcon": "assets/images/imggate.svg",
+            "clientIcon": "assets/images/img_gate_house.svg",
+            "qualification": "Diploma Certificate or equivalent",
+            "serviceClasses": [
+                "repairs",
+                "installations",
+                "maintenance"
+            ],
+            "specialties": [
+                {
+                    "id": "automaticGateInstallation",
+                    "label": "Automatic Gate Installation",
+                    "category": "installation"
+                },
+                {
+                    "id": "motorRepair",
+                    "label": "Gate Motor Repair and Replacement",
+                    "category": "repair"
+                },
+                {
+                    "id": "accessControl",
+                    "label": "Access Control System Setup",
+                    "category": "security"
+                }
+            ]
+        },
+        {
+            "id": "hvac_tech",
+            "name": "HVAC Tech",
+            "skilledIcon": "assets/images/imghvac.svg",
+            "clientIcon": "assets/images/img_thumbs_up_onprimary.svg",
+            "qualification": "National Certificate or equivalent",
+            "serviceClasses": [
+                "repairs",
+                "installations",
+                "maintenance"
+            ],
+            "specialties": [
+                {
+                    "id": "acInstallation",
+                    "label": "Air Conditioning Installation",
+                    "category": "installation"
+                },
+                {
+                    "id": "heatingSystemRepair",
+                    "label": "Heating System Repair and Maintenance",
+                    "category": "repair"
+                },
+                {
+                    "id": "ventilationInspection",
+                    "label": "Ventilation System Inspection",
+                    "category": "maintenance"
+                }
+            ]
+        },
+        {
+            "id": "laundry_attendant",
+            "name": "Laundry Attendant",
+            "skilledIcon": "assets/images/imgiron.svg",
+            "clientIcon": "assets/images/img_laundry_house.svg",
+            "qualification": "FET Certificate or equivalent",
+            "serviceClasses": [
+                "cleaning"
+            ],
+            "specialties": [
+                {
+                    "id": "washAndFold",
+                    "label": "Wash and Fold Laundry Service",
+                    "category": "service"
+                },
+                {
+                    "id": "dryCleaning",
+                    "label": "Dry Cleaning Processing",
+                    "category": "specialized"
+                },
+                {
+                    "id": "stainRemoval",
+                    "label": "Professional Stain Removal",
+                    "category": "specialized"
+                }
+            ]
+        },
+        {
+            "id": "network_tech",
+            "name": "Network Tech",
+            "skilledIcon": "assets/images/imgwifi.svg",
+            "clientIcon": "assets/images/img_settings_onprimary.svg",
+            "qualification": "SAQA Network Technician Certificate or equivalent",
+            "serviceClasses": [
+                "repairs",
+                "installations",
+                "maintenance"
+            ],
+            "specialties": [
+                {
+                    "id": "homeNetworkSetup",
+                    "label": "Home and Office Network Setup",
+                    "category": "setup"
+                },
+                {
+                    "id": "routerConfiguration",
+                    "label": "Router and Modem Configuration",
+                    "category": "setup"
+                },
+                {
+                    "id": "securitySetup",
+                    "label": "Network Security and Firewall Setup",
+                    "category": "security"
+                }
+            ]
+        },
+        {
+            "id": "it_tech",
+            "name": "IT Tech",
+            "skilledIcon": "assets/images/imgcomputers.svg",
+            "clientIcon": "assets/images/img_television.svg",
+            "qualification": "Diploma in Information Technology or equivalent",
+            "serviceClasses": [
+                "repairs",
+                "maintenance"
+            ],
+            "specialties": [
+                {
+                    "id": "hardwareRepair",
+                    "label": "Computer Hardware Repair and Replacement",
+                    "category": "repair"
+                },
+                {
+                    "id": "osInstallation",
+                    "label": "Operating System Installation and Configuration",
+                    "category": "setup"
+                },
+                {
+                    "id": "dataRecovery",
+                    "label": "Data Recovery and Backup Solutions",
+                    "category": "data"
+                }
+            ]
+        },
+        {
+            "id": "refrigeration_tech",
+            "name": "Refrigeration Tech",
+            "skilledIcon": "assets/images/imgfridge.svg",
+            "clientIcon": "assets/images/img_fridge.svg",
+            "qualification": "Diploma or equivalent",
+            "serviceClasses": [
+                "repairs",
+                "maintenance"
+            ],
+            "specialties": [
+                {
+                    "id": "coolingIssues",
+                    "label": "Cooling System Repair",
+                    "category": "repair"
+                },
+                {
+                    "id": "compressorRepair",
+                    "label": "Compressor and Motor Repair",
+                    "category": "repair"
+                },
+                {
+                    "id": "gasRefill",
+                    "label": "Refrigerant Gas Refill",
+                    "category": "maintenance"
+                }
+            ]
+        },
+        {
+            "id": "locksmith",
+            "name": "Locksmith",
+            "skilledIcon": "assets/images/imglocksmith.svg",
+            "clientIcon": "assets/images/img_location.svg",
+            "qualification": "SAQA National Certificate or equivalent",
+            "serviceClasses": [
+                "repairs",
+                "installations",
+                "maintenance"
+            ],
+            "specialties": [
+                {
+                    "id": "lockInstallation",
+                    "label": "Lock Installation and Replacement",
+                    "category": "installation"
+                },
+                {
+                    "id": "keyDuplication",
+                    "label": "Key Duplication and Cutting",
+                    "category": "keyServices"
+                },
+                {
+                    "id": "smartLocks",
+                    "label": "Smart Lock Installation",
+                    "category": "installation"
+                },
+                {
+                    "id": "emergencyLockout",
+                    "label": "Emergency Lockout Assistance",
+                    "category": "emergency"
+                }
+            ]
+        },
+        {
+            "id": "vehicle_mechanic",
+            "name": "Vehicle Mechanic",
+            "skilledIcon": "assets/images/img_carbattery.svg",
+            "clientIcon": "assets/images/img_vector_onprimary_28x38.svg",
+            "qualification": "Motor Mechanic Trade Certificate",
+            "serviceClasses": [
+                "repairs",
+                "installations",
+                "maintenance",
+                "cleaning"
+            ],
+            "specialties": [
+                {
+                    "id": "oilChange",
+                    "label": "Engine Oil and Filter Change",
+                    "category": "maintenance"
+                },
+                {
+                    "id": "brakeService",
+                    "label": "Brake Pad and Disc Replacement",
+                    "category": "repair"
+                },
+                {
+                    "id": "batteryService",
+                    "label": "Battery Testing and Replacement",
+                    "category": "maintenance"
+                },
+                {
+                    "id": "tyreService",
+                    "label": "Tyre Change and Wheel Balancing",
+                    "category": "maintenance"
+                },
+                {
+                    "id": "engineDiagnostics",
+                    "label": "Full Engine Diagnostics",
+                    "category": "repair"
+                },
+                {
+                    "id": "carWash",
+                    "label": "Full Exterior and Interior Wash",
+                    "category": "cleaning"
+                },
+                {
+                    "id": "carPolish",
+                    "label": "Wax and Polish",
+                    "category": "cleaning"
+                },
+                {
+                    "id": "valetService",
+                    "label": "Mobile Valet and Deep Cleaning",
+                    "category": "cleaning"
+                }
+            ]
+        },
+        {
+            "id": "construction",
+            "name": "Construction",
+            "skilledIcon": "assets/images/imgbricks.svg",
+            "clientIcon": "assets/images/img_construction_house.svg",
+            "qualification": "NHBRC Registration or equivalent",
+            "serviceClasses": [
+                "installations",
+                "repairs",
+                "maintenance"
+            ],
+            "specialties": [
+                {
+                    "id": "bricklaying",
+                    "label": "Bricklaying and Wall Construction",
+                    "category": "structural"
+                },
+                {
+                    "id": "plastering",
+                    "label": "Plastering and Skimming",
+                    "category": "finishing"
+                },
+                {
+                    "id": "foundation",
+                    "label": "Concrete Works and Foundation",
+                    "category": "structural"
+                },
+                {
+                    "id": "tiling",
+                    "label": "Floor and Wall Tiling",
+                    "category": "finishing"
+                },
+                {
+                    "id": "paving",
+                    "label": "Paving and Driveways",
+                    "category": "outdoors"
+                },
+                {
+                    "id": "roofRepair",
+                    "label": "Roof Leak Repair",
+                    "category": "roofing"
+                },
+                {
+                    "id": "drywallPartitioning",
+                    "label": "Drywalling and Partitioning",
+                    "category": "structural"
+                },
+                {
+                    "id": "carportInstall",
+                    "label": "Carport Installation",
+                    "category": "outdoors"
+                },
+                {
+                    "id": "aluminumFix",
+                    "label": "Aluminum Door and Window Installation",
+                    "category": "finishing"
+                }
+            ]
+        }
+    ]
+}

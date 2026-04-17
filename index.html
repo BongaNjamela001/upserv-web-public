@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <base href="/">
+  <base href="/clients/">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Upserv Clients - Connect with trusted, qualified professionals for your home service needs.">
 
-    <meta charset="UTF-8" />
-    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
-    <meta name="description" content="A Barterly Product." />
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Upserv Clients">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-    <!-- iOS meta tags & icons -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="Upserv" />
-    <link rel="apple-touch-icon" href="icons/Icon-192.png" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png" />
+  <title>Upserv Clients</title>
+  <link rel="manifest" href="manifest.json">
 
-    <title>Upserv</title>
-    <link rel="manifest" href="manifest.json" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFBEeqwiL7mvIukNi-77JepvW8aEUw30w&loading=async&v=weekly&libraries=marker" async></script>
+  <script src="flutter_bootstrap.js" async></script>
 
-    <script>
-        // The value below is injected by flutter build, do not touch.
-        var serviceWorkerVersion = '"161323754" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */';
-    </script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #FFFFFF;
+    }
+    @media (prefers-color-scheme: dark) {
+      html, body {
+        background-color: #000000;
+      }
+    }
+  </style>
 </head>
-
-<body>
-    <!-- Direct script injection since flutter.js is absent from project -->
-    <script src="main.dart.js" type="application/javascript"></script>
-    <script>
-      window.addEventListener('load', function(ev) {
-        if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('flutter_service_worker.js?v=' + serviceWorkerVersion);
-        }
-      });
-    </script>
+<body style="overflow: hidden">
 </body>
-
 </html>

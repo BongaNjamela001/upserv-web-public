@@ -1,11 +1,11 @@
 {
-    "name": "Upserv",
-    "short_name": "Upserv",
-    "start_url": "https://upserv.co.za",
+    "name": "upserv_clients",
+    "short_name": "upserv_clients",
+    "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Upserv is a trusted place for quality home and property services. A Barterly product.",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
